@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+
+#Calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:orange;
+    max-width: 500px;
+    border-radius: 10%;
+    overflow: hidden;        /*visible - Default. The overflow is not clipped. The content renders outside the element's box
+                              hidden - The overflow is clipped, and the rest of the content will be invisible
+                              scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content*/
+}
+
+#display{
+    width: 100%;
+    padding: 30px;
+    background-color: grey;
+    text-align: left;
+    font-size: 5rem;
+    color: red;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid red 2px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;              /*to change arrow cursor to hand symbol cursor*/
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+    
+}
+
+button:hover{               /* jab button pe just hover kare*/
+    background-color: yellow;
+}
+button:active{             /* jab button click kare to kya design implemen hoga*/
+    background-color: yellow;
+}
+
+
+
